@@ -1,0 +1,307 @@
+*{
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box !important;
+  font-family: 'Times New Roman', Times, serif;
+}
+html, body{
+  height: 100%;
+}
+header{
+  width: 100%;
+}
+nav{
+  background-color: black;
+  overflow: hidden;
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+}
+nav a{
+  float: left;
+  color: #32a89b;
+  text-align: center;
+  padding: 18px;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  height: 100%;
+}
+  
+nav a:hover{
+  background-color: #32a89b;
+  color: black;
+}
+  
+nav a.active{
+  background-color: #32a89b;
+  color: white;
+}
+#naslov{
+  text-decoration: none;
+  font-size: 60px;
+  font-style: italic;
+  letter-spacing: 0.2rem;
+  color: #32a89b;
+  margin-left: 7%;
+  font-family: 'Dancing Script', cursive !important;
+}
+*{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0%;
+}
+.container{
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  width: 100%;
+}
+.content{
+  color: #fbfcfd;
+  position: absolute;
+  top: 15%;
+  left: 24%;
+}
+#tekst{
+  font-size: 50px;
+  line-height: 80px;
+  color: #32a89b;
+  padding: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+button{
+  margin-top: 35px;
+  color: black;
+  padding: 20PX 45px;
+  background: #32a89b;
+  border: none;
+  font-size: 20px;
+  outline: none;
+}
+button:hover{
+  background-color: white;
+  color: #32a89b;
+}
+#ikonice{
+  float: right;
+  padding: 1%;
+} 
+body{
+  display: table;
+  width: 100%;
+  height: 100%;
+  background-color: #171717;
+  color: #000;
+  line-height: 1.6;
+  position: relative;
+  font-family: sans-serif;
+}
+.linije{
+  position:static;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
+}
+.linija{
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+.linija:after{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #32a89b 75%, #32a89b 100%);
+  -webkit-animation: drop 3s infinite;
+          animation: drop 3s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+.linija:nth-child(1){
+  margin-left: -25%;
+}
+.linija:nth-child(1)::after{
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.linija:nth-child(3){
+  margin-left: 25%;
+}
+.linija:nth-child(3)::after{
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+@-webkit-keyframes drop{
+  0%{
+    top: -50%;
+  }
+  100%{
+    top: 110%;
+  }
+}
+@keyframes drop{
+  0%{
+    top: -50%;
+  }
+  100%{
+    top: 110%;
+  }
+}
+.container i{
+    left: 50%;
+}
+.column{
+  float: left;
+  padding-left: 5%;
+  width: 50%;
+  padding-right: 5%;
+  color: white;
+}
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.column{
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  margin-top: 3%;
+  float: left;
+  width: 47%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  background-color: #32a89b;
+}
+.containerTab{
+  padding: 20px;
+  color: white;
+  margin: 20px;
+  text-align: center;
+  font-size: 25px;
+  background-color: rgba(0,0,0, 0.4);
+  display: none;
+  margin-bottom: 15%;
+}
+.containerTab h2{
+  font-size: 50px;
+  letter-spacing: 0.2rem;
+}
+.closebtn{
+  float: right;
+  color: #32a89b;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+footer{
+  left: 0;
+  bottom: 0;
+  padding: 2rem;
+  background-color: black;
+  margin-top: 4rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+footer a{
+  color: #32a89b;
+  padding: 0.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 3%;
+  font-size: 20px;
+  position:sticky;
+}
+footer a:hover{
+  color: white;
+  text-decoration: none;
+}
+.na-naslov
+{
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+.container3{
+  margin-left: 15%;
+  margin-top: 3%;
+  margin-bottom: 17%;
+}
+.container3 h2{
+  font-size: 40px;
+  color: #32a89b;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.container3 li{
+  margin-left: 5%;
+}
+.container3 a{
+  color: #32a89b;
+  font-size: 20px;
+  text-decoration: none;
+}
+#mapaLista{
+  margin-top: 2%;
+}
+.max-width{
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+@media screen and (max-width: 1000px){
+  nav a{
+    width: 100%;
+  }
+  .row{
+    margin-bottom: 7%;
+    padding-bottom: 35%;
+  }
+  .containerTab{
+    margin: 0;
+    margin-top: -35%;
+    margin-bottom: 45%;
+    padding: 0;
+    width: 100%;
+  }
+  .container3{
+    margin-bottom: 50%;
+  }
+  #tekst{
+    margin-left: -10%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1020px){
+  #tekst{
+    margin-left:0;
+    padding: 0;
+    left: 0;
+    right: 0;
+  }
+}

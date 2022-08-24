@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/kontakt.css">
+    <script src="https://kit.fontawesome.com/cef3d760f2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Kontakt</title>
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html" id="naslov">Igor Vuković</a></h1>
+        <nav>
+            <a href="index.html"><i class="fa fa-fw fa-home"></i> Početna</a>
+            <a href="biografija.html"><i class="fas fa-bold"></i> Biografija</a>
+            <a href="galerija.html"><i class="fas fa-camera"></i> Galerija </a>
+            <a class="active" href="kontakt.html"><i class="fas fa-envelope"></i> Kontakt</a>
+            <a href="https://www.instagram.com/vevericak/" id="ikonice"  target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.facebook.com/Vevericak" id="ikonice" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+        </nav>
+        <div class="linije">
+            <div class="linija"></div>
+            <div class="linija"></div>
+            <div class="linija"></div>
+          </div>
+          
+    </header>
+    <div class="container">
+        <form name="formakontakt">
+            <table class="table">
+                <tr>
+                    <td><label for="ime" >Ime</label></td>
+                    <td><input type="text" id="ime" name="ime"  autocomplete="off"></td>
+                    <td class="greska"><p class="greska" id="prva"></p></td>
+                </tr>
+                <tr>
+                    <td><label for="prezime">Prezime</label></td>
+                    <td><input type="text" id="prezime" name="prezime" autocomplete="off"></td>
+                    <td><p class="greska" id="druga"></p></td>
+                </tr>
+                <tr>
+                    <td><label for="sifra">Lozinka</label></td>
+                    <td><input type="password" id="sifra" name="sifra"  autocomplete="off"></td>
+                    <td><p class="greska" id="treca"></p></td>
+                </tr>
+                <tr>
+                    <td><label for="potvrdasifra">Potvrda lozinke</label></td>
+                    <td><input type="password" id="potvrdasifra" name="potvrdasifra"  autocomplete="off"></td>
+                    <td><p class="greska" id="cetvrta"></p></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="example@gmail.com"></td>
+                    <td><p class="greska" id="peta"></p></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><button class="button" type="button" onclick="imeprovera()">Posalji</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>     
+    <footer>
+        <div class="container1">
+          <div class="na-naslov">
+              <a href="#naslov"><i class="fas fa-angle-double-up"></i></a>
+          </div>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="podaci.html">Podaci</a>
+        <a href="mapaportfolio.html">Mapa portfolia</a><br>
+        <a href="mailto:igornrt3619@gs.viser.edu.rs">
+          igornrt3619@gs.viser.edu.rs</a>
+      </footer>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+nav{
+  background-color: black;
+  overflow: hidden;
+  margin: 0% ;
+  padding: 0% ;
+}
+nav a{
+  float: left;
+  color: #32a89b;
+  text-align: center;
+  padding: 18px ;
+  letter-spacing: 0.2rem ;
+  text-decoration: none;
+  font-size: 15px ;
+  text-transform: uppercase;
+}
+nav a:hover{
+  background-color: #32a89b;
+  color: black;
+}
+nav a.active{
+  background-color: #32a89b;
+  color: white;
+}
+#naslov{
+  text-decoration: none;
+  font-size: 60px;
+  font-style: italic;
+  letter-spacing: 0.2rem;
+  color: #32a89b;
+  margin-left: 7%;
+  font-family: 'Dancing Script', cursive !important;
+}
+.container{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+}
+.content{
+  color: #fbfcfd;
+  position: absolute;
+  top: 30%;
+  left: 24%;
+}
+#ikonice{
+  float: right;
+  padding: 1%;
+}
+.row{
+  position:relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column{
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 4px;
+}
+.column img{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+@media screen and (max-width: 800px){
+  .column{
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px){
+  .column{
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+body{
+  display: table;
+  width: 100%;
+  height: 100%;
+  background-color: #171717;
+  color: #000;
+  line-height: 1.6;
+  position: relative;
+}
+.linije{
+  position:static;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
+}
+.linija{
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+.linija:after{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #32a89b 75%, #32a89b 100%);
+  -webkit-animation: drop 3s infinite;
+          animation: drop 3s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+.linija:nth-child(1){
+  margin-left: -25%;
+}
+.linija:nth-child(1)::after{
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.linija:nth-child(3){
+  margin-left: 25%;
+}
+.linija:nth-child(3)::after{
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+@-webkit-keyframes drop{
+  0%{
+    top: -50%;
+  }
+  100%{
+    top: 110%;
+  }
+}
+@keyframes drop{
+  0%{
+    top: -50%;
+  }
+  100%{
+    top: 110%;
+  }
+}
+footer{
+  padding: 2rem;
+  background-color: black;
+  margin-top: 4rem;
+  position: relative;
+  text-align: center;
+}
+footer a{
+  color: #32a89b;
+  padding: 0.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 3%;
+  font-size: 20px;
+  position:sticky;
+
+}
+footer a:hover{
+  color: white;
+  text-decoration: none;
+}
+.na-naslov
+{
+  width: 5rem;
+  height: 5rem;
+  background-color: black;
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+@media screen and (max-width: 800px){
+  nav a{
+    width: 100%;
+  }
+}

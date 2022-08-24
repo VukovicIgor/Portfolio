@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/kontakt.css">
+    <script src="https://kit.fontawesome.com/cef3d760f2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<title>Podaci</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" id="naslov">Igor Vuković</a></h1>
+        <nav>
+            <a href="index.html"><i class="fa fa-fw fa-home"></i> Početna</a>
+            <a href="biografija.html"><i class="fas fa-bold"></i> Biografija</a>
+            <a href="galerija.html"><i class="fas fa-camera"></i> Galerija </a>
+            <a href="kontakt.html"><i class="fas fa-envelope"></i> Kontakt</a>
+            <a href="https://www.instagram.com/vevericak/" id="ikonice"  target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.facebook.com/Vevericak" id="ikonice" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+        </nav>
+        <div class="linije">
+          <div class="linija"></div>
+          <div class="linija"></div>
+          <div class="linija"></div>
+        </div>
+    </header>
+
+    <div class="container2">
+        <form name="Formapodaci">
+            <table class="table2">
+                <tr class="lab">
+                    <td class="local "><p>Lokalna memorija</p></td>
+                    <td id="localstorage"></td>
+                </tr>
+                <tr class="lab">
+                    <td class="session "><p>Cela sesija</p></td>
+                    <td id="sessionstorage"></td>
+                </tr>
+                <tr>
+                    <td class="local"><button class="btn" type="button" onclick="readStorage(localStorage,keys,values,'localstorage')"><p>Podaci u lokalnoj <br> memorij:</p></button></td>
+                    <td class="session"><button class="btn" type="button" onclick="readStorage(sessionStorage,keys,values,'sessionstorage')"><p>Podaci u celoj <br> sesiji:</p></button></td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <footer>
+        <div class="container1">
+          <div class="na-naslov">
+              <a href="#naslov"><i class="fas fa-angle-double-up"></i></a>
+          </div>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="podaci.html">Podaci</a>
+        <a href="mapaportfolio.html">Mapa portfolia</a><br>
+        <a href="mailto:igornrt3619@gs.viser.edu.rs">
+          igornrt3619@gs.viser.edu.rs</a>
+      </footer>
+    <script src="js/main.js"></script>
+    </body>
+    </html>
